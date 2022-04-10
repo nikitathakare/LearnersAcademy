@@ -1,0 +1,67 @@
+<!DOCTYPE html>s
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student</title>
+</head>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="Student.jsp">Student</a></li>
+  <li><a href="Teacher.jsp">Teacher</a></li>
+  <li><a href="Subject.jsp">Subject</a></li>
+  <li><a href="Classes.jsp">Classes</a></li>
+  <li><a href="Logout.html">Logout</a></li>
+</ul>
+
+<center>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<h2>Delete Student</h2>
+<form action="AddStudent" method ="get">
+<input type="text" name="StudName" placeholder="Enter Student Name"/><br/>
+<input type ="email" name="StudEmail" placeholder="Enter Student Email"/><br/>
+<input type="submit" value="Submit"/>
+<br/>
+<br/>
+
+
+
+</form>
+</div>
+</center>
+</body>
+</html>

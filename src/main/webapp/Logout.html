@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Logout Page</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width">
+
+    </head>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.center {
+margin-top : 2%;
+margin-left :5%
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="Student.jsp">Student</a></li>
+  <li><a href="Teacher.jsp">Teacher</a></li>
+  <li><a href="Subject.jsp">Subject</a></li>
+  <li><a href="Classes.jsp">Classes</a></li>
+  <li><a href="Logout.html">Logout</a></li>
+</ul>
+    
+    
+    
+ <form method="link" action="LogoutProcess.jsp">
+
+  
+  <div align = "center">  
+    <h1> Logout Page</h1>
+    </div>
+<div align = "center">
+<h3>Click Here to Logout</h3>
+        <input type="submit" value="Logout">
+</div>
+    </body>
+
+</html>

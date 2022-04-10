@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Subject</title>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.center {
+margin-top : 2%;
+margin-left :5%
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="Student.jsp">Student</a></li>
+  <li><a href="Teacher.jsp">Teacher</a></li>
+  <li><a href="Subject.jsp">Subject</a></li>
+  <li><a href="Classes.jsp">Classes</a></li>
+  <li><a href="Logout.html">Logout</a></li>
+</ul>
+
+
+
+<div align ="center">
+<h2>Add Subject</h2>
+<form action="Subject" method ="post">
+<input type="text" name="SName" placeholder="Enter Subject Name"/><br/>
+
+
+<input type="submit" value="Submit"/>
+<br/>
+<br/>
+<a href="Subject.jsp">Previous Page</a>
+</form>
+</div>
+
+
+
+</body>
+</head>
+</html>
